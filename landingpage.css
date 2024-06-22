@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),
+    url(" https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_1280.jpg ");
+    background-attachment: fixed;
+    background-repeat:no-repeat ;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: white;
+}
+.menubar{
+    
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.logo{
+    color: white;
+}
+.logo .logo1{
+    color: blue;
+}
+.menubar ul{
+    list-style: none;
+    display:flex;
+    text-align: center;
+}
+.menubar ul li{
+    padding: 10px 30px;
+}
+.menubar ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: all 0.3s;
+}
+.menubar ul li a:hover{
+    color:blue;
+}
+.index{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.index h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.index p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding:15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid aqua;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.span{
+    background: aqua;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover .span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
